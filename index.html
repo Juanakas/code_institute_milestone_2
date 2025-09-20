@@ -9,8 +9,22 @@
 <body>
     <h1 class="heading"> <img clase="logo" src="assets/images/logo.png" alt="desktop computer logo" width="100px"> PC hardware performance comparison </h1>
         
-    <div class="pc-parts-picker"></div>
+    <div class="pc-comparison-area"></div>
+
+    <div class="pc-parts-picker">
+    <button class="btn btnA btn-orange"><img src="assets/images/microchip-solid-full.svg" alt="Microchip" width="32"></button>
+    <button class="btn btnB btn-purple"><img src="assets/images/video-solid-full.svg" alt="Video" width="32"></button>
+    </div>
+
+    <div class="select-area">
+        <span id="hardware-part">0</span>
+        <p class="answer-message">Select Part:</p>
+        <input id="part-box" type="text">
+    </div>
+    <button class="btn btnC">Submit Answer</button>
+
     <div class="hardware-score"></div>
+
     <p class="scores">Juan's CPU score <span id="score1">0</span></p>
     <p class="scores">User CPU score <span id="score2">0</span></p>
 
