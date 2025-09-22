@@ -2,37 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>CPU performance comparison</title>
 </head>
 <body>
-    <h1 class="heading"> <img clase="logo" src="assets/images/logo.png" alt="desktop computer logo" width="100px"> PC hardware performance comparison </h1>
+
+    
+
+        <h1 class="heading"> <img class="logo" src="assets/images/logo.png" alt="desktop computer logo" width="100">CPU performance comparison</h1>
         
-    <div class="pc-comparison-area"></div>
+        <div class="CPU-selection">
 
-    <div class="pc-parts-picker">
-    <button class="btn btnA btn-orange"><img src="assets/images/microchip-solid-full.svg" alt="Microchip" width="32"></button>
-    <button class="btn btnB btn-purple"><img src="assets/images/video-solid-full.svg" alt="Video" width="32"></button>
-    </div>
-
-    <div class="select-area">
-        <span id="hardware-part">0</span>
-        <p class="answer-message">Select Part:</p>
-        <input id="part-box" type="text">
-    </div>
-    <button class="btn btnC">Submit Answer</button>
-
-    <div class="hardware-score"></div>
-
-    <p class="scores">Juan's CPU score <span id="score1">0</span></p>
-    <p class="scores">User CPU score <span id="score2">0</span></p>
-
-
-
-
-
-
+        
+        <p>Select CPU:</p>
+        <select id="cpu-choice"></select>
+        <button id="submit-button">Submit Answer</button>
+        <div class="hardware-score">
+            <p>Juan's CPU score: 88% AMD Ryzen 7 5700G</p>
+            <p>User CPU score: <span id="user-score">0</span></p>
+            <p>Your CPU <span id="userCpuSelected">X</span> is <span id="percentageDifference">X</span> <span id="fastVSslow">X</span> than Juan's CPU.</p>
+        </div>
+        </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
