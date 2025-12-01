@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- External stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>CPU performance comparison</title>
 </head>
 <body>
 
+    <!-- Main heading with Font Awesome desktop icon -->
+    <h1 class="heading"> 
+        <i class="fa-solid fa-desktop logo"></i>CPU performance comparison
+    </h1>
     
-
-        <h1 class="heading"> <i class="fa-solid fa-desktop logo"></i>CPU performance comparison</h1>
+    <!-- Main content container -->
+    <div class="CPU-selection">
         
-        <div class="CPU-selection">
-
-        
+        <!-- CPU selection label -->
         <p class="select-label">Select CPU:</p>
+        
+        <!-- Dropdown menu dynamically populated by JavaScript -->
         <select id="cpu-choice"></select>
+        
+        <!-- Submit button to trigger comparison -->
         <button id="submit-button">Submit Answer</button>
+        
+        <!-- Results section -->
         <div class="hardware-score">
+            <!-- Reference CPU score (always visible) -->
             <p>Juan's CPU score: 88% AMD Ryzen 7 5700G</p>
-            <p>User CPU score: <span id="user-score">0</span></p>
-            <p>Your CPU <span id="userCpuSelected">X</span> is <span id="percentageDifference">X</span> <span id="fastVSslow">X</span> than Juan's CPU.</p>
+            
+            <!-- User's CPU score (hidden until submission) -->
+            <p id="user-score-display" class="hidden">User CPU score: <span id="user-score"></span></p>
+            
+            <!-- Comparison results (hidden until submission) -->
+            <p id="comparison-display" class="hidden">Your CPU <span id="userCpuSelected"></span> is <span id="percentageDifference"></span> <span id="fastVSslow"></span> than Juan's CPU.</p>
         </div>
-        </div>
+    </div>
+    
+    <!-- JavaScript for interactive functionality -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
